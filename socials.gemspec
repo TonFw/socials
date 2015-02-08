@@ -9,10 +9,6 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Ilton Garcia dos Santos Silveira"]
   spec.email         = ["ilton_unb@hotmail.com"]
 
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
-  end
-
   spec.summary       = 'Simple OAuth SocialNetworks consumer'
   spec.description   = 'It is the easiest way to consume OAuth 2.0 in any Ruby based server like Rails &/or Sinatra'
   spec.homepage      = "http://tonfw.github.io/socials"

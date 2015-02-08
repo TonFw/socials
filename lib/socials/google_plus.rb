@@ -17,5 +17,4 @@ class Socials::GooglePlus < Socials::Connector
   def get_user_avatar() end
   # Post on the social
   def post(message, link, img) end
-
 end
