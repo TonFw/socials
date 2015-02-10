@@ -9,6 +9,10 @@ First install the Rails :gem:
 Create your new Rails app:
 
     $ rails new app_name 
+    
+Create your DBs
+
+    $ rake db:create
 
 Install the Socials :gem:
 
