@@ -8,8 +8,11 @@ module Socials
       puts 'Running `rails g devise User`'.light_green
       system 'rails g devise User'
 
+      puts 'Running `rails g devise:views`'.light_green
+      system 'rails g devise:views'
+
       puts 'Running `rake db:migrate` for the devise User created'.light_blue
-      system 'rake db:migrate'
+      system 'rake db:recreate'
     end
 
     # Update the devise to load the OmNiAuth gem

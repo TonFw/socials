@@ -20,6 +20,9 @@ module Socials
         template 'tasks/socials.rake', 'lib/tasks/socials.rake'
         puts 'Just created the socials rake tasks, check it on the GitHub README'.colorize(:light_blue)
 
+        template 'tasks/recreate.rake', 'lib/tasks/recreate.rake'
+        puts 'Now you can easy rebase (clean up) your DB using rake db:recreate'.colorize(:light_green)
+
         # Add the OAuth Controller
         template "controllers/omniauth_callbacks_controller.rb", "app/controllers/omniauth_callbacks_controller.rb"
         puts 'Check out you your app/controllers/omniauth_callbacks_controller.rb which persist the social user through devise'.colorize(:light_green)
@@ -33,6 +36,9 @@ module Socials
       # Add dependency GEMs & run the bundle install
       def update_gemfile
         inject_into_file 'Gemfile', after: "source 'https://rubygems.org'\n" do <<-'RUBY'
+# Easier & faster then ERB
+gem 'slim-rails', '~> 2.1.5'
+
 # For easy user session management
 gem 'devise', '~> 3.4.1'
 
