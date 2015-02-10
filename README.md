@@ -9,10 +9,20 @@ First install the Rails :gem:
 Create your new Rails app:
 
     $ rails new app_name 
+    
+Create your DBs
+
+    $ rake db:create
 
 Install the Socials :gem:
 
     $ gem install 'socials'
+
+Add it to you Gemfile (or it won't be able to call the g install)
+
+  ```ruby
+    gem 'socials', '~> 1.0.1'
+  ```
 
 Run the social generator:
 
