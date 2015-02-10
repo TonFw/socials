@@ -14,6 +14,12 @@ Install the Socials :gem:
 
     $ gem install 'socials'
 
+Add it to you Gemfile (or it won't be able to call the g install)
+
+  ```ruby
+    gem 'socials', '~> 1.0.1'
+  ```
+
 Run the social generator:
 
     $ rails g socials:install
