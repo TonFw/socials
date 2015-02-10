@@ -1,28 +1,30 @@
 # Socials
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/socials`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
-Add this line to your application's Gemfile:
+First install the Rails :gem:
 
-```ruby
-gem 'socials'
-```
+    $ gem install 'rails'
 
-And then execute:
+Create your new Rails app:
 
-    $ bundle
+    $ rails new app_name 
 
-Or install it yourself as:
+Install the Socials :gem:
 
-    $ gem install socials
+    $ gem install 'socials'
 
-## Usage
+Run the social generator:
 
-TODO: Write usage instructions here
+    $ rails g socials:install
+
+It updates your Gemfile :page_facing_up: so run the bundle
+
+    $ bundle install
+
+Now just let's link the Devise with the OAuth :boom:
+
+    $ rake socials:devise
 
 ## Development
 
