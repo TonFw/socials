@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
 
   #================== GEMs to build it GEM, so its improve the development ==============================
   # Base GEMs to build it gem
-  spec.add_development_dependency "bundler", "~> 1.7.12"
+  spec.add_development_dependency 'bundler', '~> 1.7', '>= 1.7.12'
   spec.add_development_dependency "rake", "~> 10.3", '>= 10.3.2'
 
   # RSpec for tests
